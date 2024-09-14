@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Showtime app</title>
+  <link href="/style/showtime.css" rel="stylesheet" type="text/css"/>
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <h1>Application showtime</h1>
+  <div id="content">   
+  </div>
+	<div id="user">
+    <h3>ZONE UTILISATEUR</h3>
+    Utilisateur : <span id="userId"></span>
+    <button id="logout">Déconnexion</button>
+  </div>
+    <div id="borrowed-item">
+      <p>Liste des tickets :</p>
+    </div>
+  <div id="list">
+  </div>
+</body>
+</html>
+

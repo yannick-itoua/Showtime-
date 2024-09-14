@@ -1,0 +1,81 @@
+/* Base styles for the form */
+#userdata {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+/* Animation for the labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+input:focus + label,
+input:active + label {
+  color: #5cb85c;
+}
+
+/* Link styles */
+a {
+  color: #5cb85c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4cae4c;
+}
+
+/* Problem message styles */
+#problem {
+  color: #d9534f;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Keyframes for the input focus animation */
+@keyframes input-focus {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #eef;
+  }
+}
+
+/* Applying the animation */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  animation: input-focus 0.5s forwards;
+}
